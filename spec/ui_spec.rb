@@ -56,18 +56,4 @@ RSpec.describe Ui do
     expect(output.string).to include("Enter another noun:")
   end
 
-  xit "prints out the poem" do
-    ui = Ui.new(output, input)
-    ui.print_poem
-    expect(output.string).to include("""
-        Be kind to your #{@first_noun}-footed #{@plural_noun}
-        For a duck may be somebody`s #{@second_noun},
-        Be kind to your #{@plural_noun} in #{@place}
-        Where the weather is always #{@adjective}.
-
-        You may think that this is the #{@third_noun},
-        Well it is.
-        """)
-  end
-
 end

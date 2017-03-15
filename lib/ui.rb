@@ -39,8 +39,4 @@ class Ui
     @stdin.gets.chomp
   end
 
-  def print_out_poem(filled_in_poem)
-    puts filled_in_poem
-  end
-
 end

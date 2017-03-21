@@ -24,4 +24,8 @@ RSpec.describe Poem do
     expect(poem.third_noun).to eq("moon")
   end
 
+  # it "fills in a poem with user's inputs replacing the correspondent instance variables" do
+  #   expect(poem.fill_in_poem).to eq
+  # end
+
 end

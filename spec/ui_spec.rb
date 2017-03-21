@@ -11,7 +11,9 @@ RSpec.describe Ui do
   it "introduces the game to user" do
     ui = Ui.new(output, input)
     ui.introduce_game
-    expect(output.string).to include("This is Mad-Libs: the World's greatest Word Game!")
+    expect(output.string).to include("*************************************************")
+    expect(output.string).to include("This is Mad-Libs: the World's Greatest Word Game!")
+    expect(output.string).to include("*************************************************")
   end
 
   it "asks to enter a noun" do
@@ -54,6 +56,13 @@ RSpec.describe Ui do
     ui = Ui.new(output, input)
     ui.get_third_noun
     expect(output.string).to include("Enter another noun:")
+  end
+
+  it "asks the user to play again" do
+    input = StringIO.new("\n")
+    ui = Ui.new(output, input)
+    ui.asks_to_play_again
+    expect(output.string).to include("Why don't you try again? [yes/no]")
   end
 
 end

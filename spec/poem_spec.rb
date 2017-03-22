@@ -1,6 +1,7 @@
 require_relative '../lib/poem'
 require_relative '../lib/ui'
 
+
 RSpec.describe Poem do
 
   let(:poem) {Poem.new(ui)}
@@ -23,9 +24,5 @@ RSpec.describe Poem do
     expect(poem.adjective).to eq("yellow")
     expect(poem.third_noun).to eq("moon")
   end
-
-  # it "fills in a poem with user's inputs replacing the correspondent instance variables" do
-  #   expect(poem.fill_in_poem).to eq
-  # end
 
 end

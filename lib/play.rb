@@ -11,4 +11,12 @@ class Play
     @ui.print_out_poem(filled_in_poem)
   end
 
+  def play_again
+    reply = @ui.asks_to_play_again
+      while reply != "no"
+        play_madlibs
+        reply = @ui.asks_to_play_again
+      end
+  end
+
 end

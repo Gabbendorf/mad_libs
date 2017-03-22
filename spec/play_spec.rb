@@ -8,7 +8,7 @@ RSpec.describe Play do
   let(:poem) {Poem.new(ui)}
   let(:play) {Play.new(ui, poem)}
 
-  it "runs the game" do
+  xit "runs the game" do
     poem = double("poem")
     expect(poem).to receive(:get_values).and_return("cat")
     play = Play.new(ui, poem)

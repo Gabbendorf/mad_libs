@@ -18,15 +18,15 @@ class Poem
   end
 
   def fill_in_poem
-      """
-      Be kind to your #{@first_noun}-footed #{@plural_noun}
-      For a duck may be somebody`s #{@second_noun},
-      Be kind to your #{@plural_noun} in #{@place}
-      Where the weather is always #{@adjective}.
+    """
+    Be kind to your #{@first_noun}-footed #{@plural_noun}
+    For a duck may be somebody`s #{@second_noun},
+    Be kind to your #{@plural_noun} in #{@place}
+    Where the weather is always #{@adjective}.
 
-      You may think that this is the #{@third_noun},
-      Well it is.
-      """
+    You may think that this is the #{@third_noun},
+    Well it is.
+    """
   end
 
 end
